@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- slider file -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        :root{
+            --font-mont:'montserrat';
+        }
+    a{
+        text-decoration: none;
+        display: inline-block;
+    }
+    .blog_image{
+    width: 360px;
+    height: 360px;
+}
+.blog_image img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.blog_head{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: var(--font-mont);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.blog_txt{
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-mont);
+    text-align: center;
+}
+.blog_image{
+    position: relative;
+}
+.blog_image::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #111117;
+    opacity: .3;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    z-index: 0;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.blog-top-contant{
+    padding: 50px 25px;
+}
+.blog-top-contant i{
+    font-size: 16px;
+    margin-right: 10px;
+}
+.blog-top-contant a{
+    margin: 0px 10px;
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-mont);
+}
+
+.blog1{
+    position: relative;
+    overflow: hidden;
+}
+.blog_contant{
+    position: absolute;
+    bottom: -30%;
+    padding: 50px 25px;
+    transition:.4s ;
+    -webkit-transition:.4s ;
+    -moz-transition:.4s ;
+    -ms-transition:.4s ;
+    -o-transition:.4s ;
+}
+.blog-top-contant{
+    position: absolute;
+    top: -70px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.blog1:hover .blog-top-contant{
+    top: 0;
+}
+.blog1:hover .blog_contant{
+    bottom: 0;
+}
+.blog1:hover .blog_image::before{
+    opacity: .5;
+}
+    </style>
+
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+</head>
+<body>
+
+    <div class="owl-carousel owl-theme" id="blog_slider">
+         <div class="blog1">
+            <div class="blog_image">
+                <img src="assets/image/news-1.webp" alt="">
+            </div>
+            <div class="blog-top-contant flex">
+                <a href="">
+                    <i class="far fa-user"></i>
+                    Andrea Miller
+                </a>
+                <a href="">
+                    <i class="far fa-clock"></i>
+                    2 Days Ago
+                </a>
+            </div>
+            <div class="blog_contant">
+                <p class="blog_head">Increasing creativity is <br>possible for everyone</p>
+                <p class="blog_txt">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    
+
+
+
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    items:3,
+    nav:true,
+})
+
+    </script>
+</body>
+</html>
